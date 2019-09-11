@@ -4,9 +4,10 @@
         <title>Som's Club</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -30,14 +31,18 @@
                             <a class="nav-link" href="#">ABOUT</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FEATURES</a>
-                            <section class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Annual Summit</a>
-                                <section class="dropdown-sectionider"></section>
-                                <a class="dropdown-item" href="#">Competition</a>
-                                <section class="dropdown-sectionider"></section>
-                                <a class="dropdown-item" href="#">Benefits</a>
-                            </section>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">FEATURES</a>
+                            <ul class="dropdown-menu" style="background: transparent">
+                                <li>
+                                        <a class="dropdown-item" href="#">Annual Summit</a>
+                                </li>
+                                <li>
+                                        <a class="dropdown-item" href="#">Competition</a>
+                                </li>
+                                <li>
+                                        <a class="dropdown-item" href="#">Benefits</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">ENROLLMENT</a>
@@ -150,7 +155,7 @@
         </section>
 
         <footer class="footer-social">
-			<p>Copyright &copy 2019, Som's Club</p>
+			<p>Copyright &copy 2019, <span style="font-family: 'Pacifico', cursive;">Som's Club</span></p>
 			<a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-google"></a>

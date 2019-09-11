@@ -1,11 +1,10 @@
-body{
+html body{
     font-family: 'Hepta Slab', serif;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 #navigation_bar{
     background-image: url("../img/header.png");
-
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -18,10 +17,10 @@ body{
 }
 
 #navbarSupportedContent{
-    margin-left: 50%;
+    margin-left: 45%;
 }
 
-#navbarSupportedContent a{
+.nav-link a{
     color: #ffffff;
 }
 
@@ -29,9 +28,8 @@ body{
     text-shadow: 0 0 10px #ffffff; 
 }
 
-.dropdown-menu{
-    background: transparent;
-    border: none;
+.dropdown-item{
+    color: white;
 }
 
 .dropdown-menu a:hover {
@@ -48,7 +46,7 @@ body{
 }
 
 #three_images{
-    padding-top: 93px;
+    padding-top: 110px;
     background: black;
     color: #ffffff;
 }
@@ -105,8 +103,8 @@ body{
 }
 
 .fa {
-    padding: 20px;
     font-size: 30px;
+    color:white;
     width: 50px;
     text-align: center;
     text-decoration: none;
@@ -115,53 +113,53 @@ body{
 
 .fa:hover {
     opacity: 0.7;
+    text-decoration: none;
 }
 
-.fa-facebook {
-    background: #3B5998;
-    color: white;
+.fa-facebook:hover {
+    color: #3B5998;
+
 }
 
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
+.fa-twitter:hover{
+    color: #55ACEE;
 }
 
-.fa-google {
-    background: #dd4b39;
-    color: white;
+.fa-google:hover {
+    color: #dd4b39;
+
 }
 
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
+.fa-linkedin:hover {
+    color:#007bb5;
+    
 }
 
-.fa-youtube {
-    background: #bb0000;
-    color: white;
+.fa-youtube:hover {
+    color: #bb0000;
+    
 }
 
-.fa-instagram {
-    background: #125688;
-    color: white;
+.fa-instagram:hover {
+   color: #125688;
+
 }
 
 @media(max-width: 1420px){
     #navbarSupportedContent{
-        margin-left: 45%;
+        margin-left: 40%;
     }
 }
 
 @media(max-width: 1300px){
     #navbarSupportedContent{
-        margin-left: 35%;
+        margin-left: 30%;
     }
 }
 
 @media(max-width: 1110px){
     #navbarSupportedContent{
-        margin-left: 25%;
+        margin-left: 20%;
     }
 }
 
