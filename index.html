@@ -15,22 +15,32 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <section>
+        <section> <!--This section is for navigation bar in my webpage-->
+            <h2 class="hiding">Navigation Bar</h2>
+            <!--fixed horizontal navigation bar with menu items-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navigation_bar">
+                <!--branding logo-->
                 <a class="navbar-brand" style="font-family: 'Pacifico', cursive; font-size: 300%; color: white" href="#">Som's Club</a>
+                <!--Navigation bar will collapse on small screen-->
                 <button id="nav-toggle-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             
+                <!--This section is for adding menu items in the navigation bar that will collapse on small screens-->
                 <section class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <h3 class="hiding">Menu on Navigation Bar</h3>
+                    <!--Creating unordered list for navigation bar menu items-->
                     <ul class="navbar-nav mr-auto">
+                        <!--HOME item will always be active-->
                         <li class="nav-item active">
                             <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">ABOUT</a>
                         </li>
+                        <!--Creating an menu item with dropdown option-->
                         <li class="nav-item dropdown">
+                            <!--Dropdown menu will also toggle in small screens-->
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">FEATURES</a>
                             <ul class="dropdown-menu" style="background: transparent">
                                 <li>
@@ -53,75 +63,110 @@
                     </ul>
                 </section>
             </nav>
-        </section>
+        </section><!--end of navigation bar-->
 
+        <!--This section is for making three columns with max width of 100%-->
         <section class="container-fluid" id="three_images">
+            <h2 class="hiding">Triple Column Section</h2>
+            <!--Within a row there are three columns-->
             <section class="row">
-                <section class="col-sm-4" id="mygrid">
-                    <section id="images">
-                        <img src="img/music.png">
+                <h3 class="hiding">Dividing the row in three column</h3>
+                <!--Starting at tablets and scaling to large desktops, there will be three equal sized columns, in mobile phones, the columns will automatically stack-->
+                <section class="col-sm-4 mygrid">
+                    <h4 class="hiding">First column</h4>
+                    <section class="myimages">
+                        <!--Music image is a added-->
+                        <img src="img/music.png" alt="music_image">
                         <h3>Music Club</h3>
                         <p>The Music club aims to nurture the talent in every member and provide a conducive environment for mutual learning. We believe that each insectionidual has something to offer and through mentorships, jams, competitions and events we strive to polish skills, share knowledge and spread musical joy. If music is a way of life for you, the Som's Music Club provides opportunities to learn more about music, assist students wanting to transfer to a four-year college music program and offers activities and performance venues for students to share their interest in music. Students need only have an interest in music to join.</p>
                     </section>
                 </section>
-                <section class="col-sm-4" id="mygrid">
-                    <section id="images">
-                        <img src="img/literary.png">
+                <section class="col-sm-4 mygrid">
+                    <h4 class="hiding">Second column</h4>
+                    <section class="myimages">
+                        <!--Literary image is a added-->
+                        <img src="img/literary.png" alt="literary_image">
                         <h3>Literary Club</h3>
                         <p>The Literary club offers a competing platform for the knowledge-hungry students. It promises to cultivate a passion for quizzing, Debating, creative writing, literature,  Elocution, etc. among the students. Literary club is to develop self-efficacy and confidence and would help to enhance the general knowledge base. Works in tandem to benefit students in the disciplines of writing and speaking by conducting events that are both instructional and enjoyable. Sharpening the skills of logical thinking. t develops excellent communication skills and teaches students to think spontaneously. The aim of the club is to inculcate among students a love for language and enhance their literary skills.</p>
                     </section>
                 </section>
-                <section class="col-sm-4" id="mygrid">
-                    <section id="images">
-                        <img src="img/drama.png">
+                <section class="col-sm-4 mygrid">
+                    <h4 class="hiding">Third column</h4>
+                    <section class="myimages">
+                        <!--Drama image is a added-->
+                        <img src="img/drama.png" alt="drama_image">
                         <h3>Drama Club</h3>
                         <p>The Drama club aims to provide those with an initial interest in acting an opportunity to learn more about the art. To set up a drama club is to strengthen members’ skills of understanding and interpreting dramatic texts through reading and writing in English. In addition, it can enhance members’ English speaking and listening skills by encouraging them to play different roles in different dramatic contexts. As audience, setting up a drama club can enable students to learn English by appreciating a drama production. Members have to rehearse the drama by listening to others actors’ lines and by reading aloud their own lines. They can even create their script and interact with other members in English.</p>
                     </section>
                 </section>
             </section>
-        </section>
+        </section><!--end of section which contains three equal sized columns-->
 
+        <!--One ID is needed for carousel controls to function properly-->
+        <!--The .slide class adds a CSS transition and animation effect-->
+        <!--The data-ride="carousel" attribute tells Bootstrap to begin animating the carousel immediately when the page loads-->
         <section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <h2 class="hiding">Herounit with 3 images as Carousel</h2>
+            <!--The indicators are the little dots at the bottom of each slide-->
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
+            <!--The slides are specified inside this section with .carousel-inner class-->
             <section class="carousel-inner">
+                <h3 class="hiding">Adding 3 images in the Carousel</h3>
+                <!--This carousel item will be active with the page loads-->
                 <section class="carousel-item active">
+                    <h4 class="hiding">First Image</h4>
                     <img class="d-block w-100" src="img/herounit.png" alt="First slide">
+                    <!--This section is needed to add caption in slides-->
+                    <!--The class .d-none and .d-md-block is added for not showing the captions for mobile screens-->
                     <section class="carousel-caption d-none d-md-block">
                         <h5>Som's Club, Mumbai</h5>
                         <p>The pavilion is constructed using a modular metal frame system of construction with prefabricated elements</p>
                     </section>
                 </section>
                 <section class="carousel-item">
+                    <h4 class="hiding">Second Image</h4>
                     <img class="d-block w-100" src="img/herounit1.png" alt="Second slide">
+                    <!--This section is needed to add caption in slides-->
+                    <!--The class .d-none and .d-md-block is added for not showing the captions for mobile screens-->
                     <section class="carousel-caption d-none d-md-block">
                         <h5>Som's Club, Bengaluru</h5>
                         <p>This is built using a modular system and built over various designary protocols for maintaining security</p>
                     </section>
                 </section>
                 <section class="carousel-item">
+                    <h4 class="hiding">Third Image</h4>
                     <img class="d-block w-100" src="img/herounit2.png" alt="Third slide">
+                    <!--This section is needed to add caption in slides-->
+                    <!--The class .d-none and .d-md-block is added for not showing the captions for mobile screens-->
                     <section class="carousel-caption d-none d-md-block">
                         <h5>Som's Club, Delhi</h5>
                         <p>This clubhouse is finished with larch cladding, a rubber roof and metal doors and windows for offsite</p>
                     </section>
                 </section>
             </section>
+            <!--This control section is added to add button for checking previous slide of carousel-->
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
+            <!--This control section is added to add button for checking next slide of carousel-->
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </section>
+        </section><!--end of herounit section which contains carousel-->
         
+        <!--This section is for making two columns with max width of 100%-->
         <section class="container-fluid" id="two_column">
+            <h2 class="hiding">Adding two columns</h2>
+            <!--Within a row there are two columns-->
             <section class="row">
+                <h3 class="hiding">Two columns inside row</h3>
+                <!--For desktops, there will be two equal sized columns, in mobile phones and tablets the columns will automatically stack-->
                 <section class="col-lg-6" id="left_col">
                         <h2>Benefits of Our Club</h2>
                         <ul>
@@ -136,6 +181,8 @@
                         </ul>
                 </section>
                 <section class="col-lg-6" id="right_col">
+                    <h3 class="hiding">Second Column</h3>
+                    <!--For second column, there are total three rows which will contain full screen for mobile phones and tablets-->
                     <section class="col-lg-12 myrow">
                         <h3 style="margin-top: 15px">Modelling Innovation</h3>
                         <p>Lets be honest, no model or agency is going to hire you if you don’t have any modeling or fashion pieces in your portfolio. You have to start somewhere, so find some friends who are up for modeling for you and hone your skills practicing with them. When you’re just starting you’ll most likely do a lot of shoots for free, but focus on getting in as much good work as possible and it will pay off down the road. If your friends are happy with your photos, they’ll most likely show their friends and as well as put them on Facebook and other social sites, which will only help in getting you exposure.</p>                   
@@ -152,10 +199,12 @@
                     </section>
                 </section>
             </section>
-        </section>
+        </section><!--end of the section which contain two equal sized columns with second column contain three rows-->
 
+        <!--Adding a footer with social media options-->
         <footer class="footer-social">
-			<p>Copyright &copy 2019, <span style="font-family: 'Pacifico', cursive;">Som's Club</span></p>
+            <p>Copyright &copy; 2019, <span style="font-family: 'Pacifico', cursive;">Som's Club</span></p>
+            <!--Adding total 6 social media icons-->
 			<a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-google"></a>

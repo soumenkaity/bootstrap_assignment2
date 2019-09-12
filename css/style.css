@@ -3,6 +3,18 @@ html body{
     font-size: 15px;
 }
 
+h2.hiding{
+    display: none;
+}
+
+h3.hiding{
+    display: none;
+}
+
+h4.hiding{
+    display: none;
+}
+
 #navigation_bar{
     background-image: url("../img/header.png");
     /* Center and scale the image nicely */
@@ -40,7 +52,7 @@ html body{
     font-size: 15px;
 }
 
-#images img{
+.myimages img{
     width: 100%;
     height: 30vw;
 }
@@ -51,7 +63,7 @@ html body{
     color: #ffffff;
 }
 
-#images h3 {
+.myimages h3 {
     text-align: center;
 }
 
